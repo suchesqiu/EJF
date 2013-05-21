@@ -1,0 +1,398 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset=utf-8 />
+        <title>suches template</title>
+    </head>    
+    <body>
+
+        <div class='sub_ele'>
+            <div class='item'>selector: > .item, .sub_ele</div>
+            <div class='item'>selector: > .item, .sub_ele</div>
+            <div>.........empty.........</div>
+            <div>.........empty.........</div>
+        </div>
+
+        <div class='sub_ele1'>
+            <div class='item'>selector: > .item, .sub_ele1</div>
+            <div class='item'>selector: > .item, .sub_ele1</div>
+            <div>.........empty.........</div>
+            <div>.........empty.........</div>
+        </div>
+
+        <hr />
+
+        <div class='siblings_offset'>
+            <div class='offset'>
+                div.siblings_offset &gt; div.offset ~ .siblings
+            </div>
+            <div class='siblings'>
+                .........................1
+            </div>
+            <div class='siblings'>
+                .........................2
+            </div>
+            <div class='siblings'>
+                .........................3
+            </div>
+        </div>
+
+        <div class='siblings_offset'>
+            <div class='offset'>
+                div.siblings_offset &gt; div.offset ~ .siblings
+            </div>
+            <div class='siblings'>
+                .........................1
+            </div>
+            <div class='siblings'>
+                .........................2
+            </div>
+            <div class='siblings'>
+                .........................3
+            </div>
+        </div>
+
+        <hr />
+
+        <div class='next_element_offset'>
+            div.next_element_offset + .next_element  
+        </div>
+        <div class='next_element'>
+            .........................
+        </div>
+        <div class='next_element'>
+            .........................
+        </div>
+
+        <div class='next_element_offset'>
+            div.next_element_offset + .next_element  
+        </div>
+        <div class='next_element'>
+            .........................
+        </div>
+        <div class='next_element'>
+            .........................
+        </div>
+
+        <hr />
+
+        <div class='has_level_sub_class'>
+            <dl class='sub'>
+                <dt>div.has_level_sub_class &gt; .sub</dt>
+                <dd>
+                <dl>
+                    <dt>..............</dt>
+                    <dd>..............</dd>
+                    <dd>..............</dd>
+                    <dd>..............</dd>
+                </dl>
+                </dd>
+                <dd>
+                <dl>
+                    <dt>..............</dt>
+                    <dd>..............</dd>
+                    <dd>..............</dd>
+                    <dd>..............</dd>
+                </dl>
+                </dd>
+            </dl>
+
+            <dl class='sub'>
+                <dt>div.has_level_sub_class &gt; .sub</dt>
+                <dd>
+                <dl>
+                    <dt>..............</dt>
+                    <dd>..............</dd>
+                    <dd>..............</dd>
+                    <dd>..............</dd>
+                </dl>
+                </dd>
+                <dd>
+                <dl>
+                    <dt>..............</dt>
+                    <dd>..............</dd>
+                    <dd>..............</dd>
+                    <dd>..............</dd>
+                </dl>
+                </dd>
+            </dl>
+
+        </div>
+
+        <hr />
+
+        <div class='has_level_sub_class_all'>
+            <dl class='sub'>
+                <dt>div.has_level_sub_class_all .sub1 1</dt>
+                <dd>
+                <dl class='sub1'>
+                    <dt>.....................</dt>
+                    <dd>.....................</dd>
+                    <dd>.....................</dd>
+                    <dd>.....................</dd>
+                </dl>
+                </dd>
+                <dd>
+                <dl class='sub1'>
+                    <dt>.....................</dt>
+                    <dd>.....................</dd>
+                    <dd>.....................</dd>
+                    <dd>.....................</dd>
+                </dl>
+                </dd>
+            </dl>
+
+            <dl class='sub'>
+                <dt>div.has_level_sub_class_all .sub1 2</dt>
+                <dd>
+                <dl class='sub1'>
+                    <dt>.....................</dt>
+                    <dd>.....................</dd>
+                    <dd>.....................</dd>
+                    <dd>.....................</dd>
+                </dl>
+                </dd>
+                <dd>
+                <dl class='sub1'>
+                    <dt>.....................</dt>
+                    <dd>.....................</dd>
+                    <dd>.....................</dd>
+                    <dd>.....................</dd>
+                </dl>
+                </dd>
+            </dl>
+
+        </div>
+
+        <hr />
+
+        <div class='has_level_sub_level'>
+            <dl>
+                <dt>div.has_level_sub_level &gt; dl 1</dt>
+                <dd>
+                <dl>
+                    <dt>...........</dt>
+                    <dd>...........</dd>
+                    <dd>...........</dd>
+                    <dd>...........</dd>
+                </dl>
+                </dd>
+                <dd>
+                <dl>
+                    <dt>...........</dt>
+                    <dd>...........</dd>
+                    <dd>...........</dd>
+                    <dd>...........</dd>
+                </dl>
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>div.has_level_sub_level &gt; dl 2</dt>
+                <dd>
+                <dl>
+                    <dt>...........</dt>
+                    <dd>...........</dd>
+                    <dd>...........</dd>
+                    <dd>...........</dd>
+                </dl>
+                </dd>
+                <dd>
+                <dl>
+                    <dt>...........</dt>
+                    <dd>...........</dd>
+                    <dd>...........</dd>
+                    <dd>...........</dd>
+                </dl>
+                </dd>
+            </dl>
+        </div>
+
+        <hr />
+
+        <div class='has_level'>
+            <dl>
+                <dt>div.has_level dl 1</dt>
+                <dd>
+                <dl>
+                    <dt>.......</dt>
+                    <dd>.......</dd>
+                    <dd>.......</dd>
+                    <dd>.......</dd>
+                </dl>
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>div.has_level dl 2</dt>
+                <dd>
+                <dl>
+                    <dt>.......</dt>
+                    <dd>.......</dd>
+                    <dd>.......</dd>
+                    <dd>.......</dd>
+                </dl>
+                </dd>
+            </dl>
+
+        </div>
+
+        <hr />
+
+        <div id='div4' class='id_class'>
+            <b>#div4.id_class</b>
+        </div>
+
+        <div id='div5' class='id_class'>
+            <b>#div5.id_class</b>
+        </div>
+
+        <div id='div6' class='id_class'>
+            <b>#div6.id_class</b>
+        </div>
+
+        <hr />
+
+        <div class='class_div'>
+            <b>selector: div.class_div 0</b>
+        </div>
+
+        <div class='class_div'>
+            <b>selector: div.class_div 1</b>
+        </div>
+
+        <hr />
+
+        <div id='div0'>
+            selector: #div0
+        </div>
+
+        <div id='div1'>
+            selector: #div1
+        </div>
+
+        <div id='div2'>
+            selector: #div2
+        </div>
+
+        <hr />
+
+        <div class='div'>
+            selector: .div 1
+        </div>
+
+        <div class='div'>
+            selector: .div 2
+        </div>
+
+        <hr />
+
+        <div class='test_class'>
+            selector: .test_class 1
+        </div>
+
+        <div class='test_class'>
+            selector: .test_class 2
+        </div>
+
+        <hr />
+
+        <ul>
+            <li>selector: ul 1</li>
+            <li>selector: ul 1</li>
+            <li>selector: ul 1</li>
+            <li>selector: ul 1</li>
+        </ul>
+
+        <ul>
+            <li>selector: ul 2</li>
+            <li>selector: ul 2</li>
+            <li>selector: ul 2</li>
+            <li>selector: ul 2</li>
+        </ul>
+
+        <script src="../../EJF.js"></script>
+        <script src="../../mods/core/core.js"></script>
+        <script src="../../mods/browser/browser.js"></script>
+        <script src="../../mods/delegation/delegation.js"></script>
+        <script src="../../mods/selector/selector.js"></script>
+        <script src="../../mods/event_extend/event_extend.js"></script>
+        <script src="../../mods/element/element.js"></script>
+        <script src="../../mods/string/string.js"></script>
+
+        <script type="text/javascript">
+
+            $$.debug = true;
+
+            $$.ready
+            (
+             function(_evt )
+             {
+                 $$
+                 (
+                  [
+                  '.div'
+                  , 'ul'
+                  , '#div0'
+                  , '#div1'
+                  , '#div2'
+                  , '#div3'
+                  , 'div.class_div'
+                  , '.test_class'
+                  , '#div4.id_class'
+                  , '#div5.id_class'
+
+                  , '#div6.id_class'
+                  , 'div.has_level dl'
+                  , 'div.siblings_offset > div.offset ~ .siblings'
+                  , 'div.next_element_offset + .next_element'
+                  , 'div.has_level_sub_level > dl'
+                  , 'div.has_level_sub_class > .sub'
+                  , 'div.has_level_sub_class_all .sub1'
+                  ].join()
+                  )
+                  .each
+                  (
+                   function( $e )
+                   {
+                   //alert( $e );
+                   $e.style.backgroundColor = "#ccc";
+                   }
+                  );
+                //.on( 'mousedown', test_event )
+                ;
+                $$('*').each( function( $e ){
+                        $e.style.color = 'blue';
+                        });
+                $$('> .item', 'div.sub_ele')
+                    .each
+                    (
+                     function($e)
+                     {
+                     $e.style.backgroundColor = "#ececec";
+                     }
+                    )
+                    .on( 'mousedown', test_event )
+         }
+        );  
+
+        function test_event(evt)
+        {
+            evt.stopPropagation();
+            alert( this.innerHTML );
+        }
+
+        $$.ready
+            (
+             function()
+             {
+                 //alert(this)
+             }
+            );  
+
+        </script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>shawl.qiu template</title>
+<style type="text/css">
+/* <![CDATA[ */
+
+/* ]]> */
+</style>
+</head>
+<body>
+
+<ul id='ul_7'>
+  <label>selector: #ul_7 li[attr*='o'][attr^='o']</lable>
+  <li attr='ok'>attr='ok' 1</li>
+  <li attr='ok'>attr='ok' 2</li>
+  <li attr='no'>attr='no' 3</li>
+  <li attr='no'>attr='no' 4</li>
+  <li attr='is_not_no'>attr='is_not_no' 5</li>
+  <li attr='is_not_no'>attr='is_not_no' 6</li>
+</ul>
+
+<hr />
+
+<ul id='ul_6'>
+  <label>selector: #ul_6 li[attr$='o']</lable>
+  <li attr='ok'>attr='ok' 1</li>
+  <li attr='ok'>attr='ok' 2</li>
+  <li attr='no'>attr='no' 3</li>
+  <li attr='no'>attr='no' 4</li>
+  <li attr='is_not_no'>attr='is_not_no' 5</li>
+  <li attr='is_not_no'>attr='is_not_no' 6</li>
+</ul>
+
+<hr />
+
+<ul id='ul_5'>
+  <label>selector: #ul_5 li[attr$='o']</lable>
+  <li attr='ok'>attr='ok' 1</li>
+  <li attr='ok'>attr='ok' 2</li>
+  <li attr='no'>attr='no' 3</li>
+  <li attr='no'>attr='no' 4</li>
+  <li attr='is_not_no'>attr='is_not_no' 5</li>
+  <li attr='is_not_no'>attr='is_not_no' 6</li>
+</ul>
+
+<hr />
+
+<ul id='ul_4'>
+  <label>selector: #ul_4 li[attr^='n']</lable>
+  <li attr='ok'>attr='ok' 1</li>
+  <li attr='ok'>attr='ok' 2</li>
+  <li attr='no'>attr='no' 3</li>
+  <li attr='no'>attr='no' 4</li>
+  <li attr='is_not_no'>attr='is_not_no' 5</li>
+  <li attr='is_not_no'>attr='is_not_no' 6</li>
+</ul>
+
+<hr />
+
+<ul id='ul_3'>
+  <label>selector: #ul_3 li[attr!='ok']</lable>
+  <li attr='ok'>attr='ok' 1</li>
+  <li attr='ok'>attr='ok' 2</li>
+  <li attr='no'>attr='no' 3</li>
+  <li attr='no'>attr='no' 4</li>
+</ul>
+
+<hr />
+
+<ul id='ul_2'>
+  <label>selector: #ul_2 li[attr='ok']</lable>
+  <li attr='ok'>attr='ok' 1</li>
+  <li attr='ok'>attr='ok' 2</li>
+  <li attr='no'>attr='no' 3</li>
+  <li attr='no'>attr='no' 4</li>
+</ul>
+
+<hr />
+
+<ul id='ul_1'>
+  <label>selector: #ul_1 li[attr]</lable>
+  <li attr='ok'>attr='ok' 1</li>
+  <li attr='ok'>attr='ok' 2</li>
+  <li attr='no'>attr='no' 3</li>
+  <li attr='no'>attr='no' 4</li>
+</ul>
+
+<script src="../../EJF.js"></script>
+<script src="../../mods/core/core.js"></script>
+<script src="../../mods/browser/browser.js"></script>
+<script src="../../mods/delegation/delegation.js"></script>
+<script src="../../mods/selector/selector.js"></script>
+<script src="../../mods/event_extend/event_extend.js"></script>
+<script src="../../mods/element/element.js"></script>
+<script src="../../mods/string/string.js"></script>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+
+    
+    $$(
+      [
+        '#ul_1 > li[attr]'
+        , '#ul_2 > li[attr=ok]'
+        , '#ul_3 > li[attr!=ok]'
+        , '#ul_4 > li[attr^=n]'
+        , '#ul_5 > li[attr$=o]'
+        , '#ul_6 > li[attr*=o]'
+        , "#ul_7 li[attr*='o'][attr^='o']"
+      ].join(',')
+    )
+    .on
+    ( 
+      'click', 
+      test_event
+    );
+
+
+function test_event(evt)
+{
+    alert( 1 );
+  evt.stopPropagation();
+  alert( this.innerHTML );
+}
+
+
+
+/*]]>*/
+</script>
+
+</body>
+</html>
